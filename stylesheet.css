@@ -4,17 +4,17 @@ body {
 	padding: 0;
 }
 
-/* HEADER*/
+														/***************HEADER*******************/
+
 header {
+	background: #eaeaea url("img/background.jpg");
+	background-size: cover;
 	position: relative;
 	text-align: right;
 	padding: 250px;
 	padding-bottom:50px;
-	background-color:#eaeaea;
-	background-image: url("img/background.jpg");
 	background-size: cover;
 }
-
 header .welcomeHeader {
 	color: crimson;
 	position: relative;	
@@ -23,7 +23,66 @@ header .welcomeHeader {
 	font: bold italic 40pt serif;
 	margin-bottom: 0;
 }
+.descriptionHeader {
+	text-align: center;
+	color: red;
+}
 
+.contactsHeader {
+	text-align: center;
+	margin: 5px;
+	
+}
+												/***************NAVIGATION PANEL*******************/
+
+nav ul {
+	position: relative;
+	list-style: none;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	
+}
+nav ul li {
+	display: inline;
+	font-size: 20px;
+	padding-left: 200px;
+}
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+															/***************BLOCKS*******************/
+
+.menuBar {
+	height: 80px;
+}
+.content {
+	color: white;
+	float: right;
+	border: 1px solid white;
+	width: 77%;
+	height: 150px;
+	margin-bottom: 30px;
+	margin-right: 5px;
+}
+
+.group::before,
+.group::after {
+	content: "";
+	display: table;
+}
+.group::after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+														/***************IMAGES*******************/
 
 #profileimg {
 	position: absolute;
@@ -36,65 +95,86 @@ header .welcomeHeader {
 	transform: translate3d(-50%, -50%, 0);
 }
 
-/* Navigation*/
-nav ul {
-	position: relative;
-	list-style: none;
-	padding: 10px;
-	background-color: rgba(255, 255, 255, 0.5);
-	
-}
-
-nav ul li {
-	display: inline;
-	font-size: 20px;
-	padding-left: 200px;
-}
-
-nav ul li a {
-	color: white;
-	text-decoration: none;
-}
-
-nav ul li a:hover {
-	text-decoration: underline;
+.logoImg {
+	width: 75px;
+	height: 75px;
 }
 
 
-.menuBar {
-	height: 80px;
-}
-
-.content {
-	color: white;
-	float: right;
-	border: 1px solid white;
-	width: 57%;
-	height: 150px;
-	margin-bottom: 30px;
-	margin-right: 5px;
-}
-
+											/***************LEFT PANEL*******************/
 .leftPanel {
+	position: relative;
 	float: left;
-	height: 150px;
-	width: 40%;
+	height: 550px;
+	width: 20%;
 	color: white;
-	border: 1px solid white;
 	margin-bottom: 30px;
 	margin-left: 5px;
+	background-color: rgb(133, 133, 133);
 }
 
+.contactsHeader {
+	text-decoration: underline;
+}
+	
+.linkList {
+	list-style: none;
+	position: absolute;
+	padding-left: 5px;
+}
+
+.contactsDescription {
+	position: absolute;
+	margin-left: 85px;
+}
+
+.descriptionList{
+	list-style: none;
+}
+.descriptionListItem {
+	padding: 23px 0;
+	margin-top: 1px;
+	margin-left: 0px;
+	font: 30px italic;
+}
+
+													/***************FOOTER*******************/
+
 footer {
+	position: relative;
 	width: 100%;
-	height: 80px;
+	height: 90px;
 	color: white;
 	background-color: rgb(133, 133, 133);
-	clear: both;
 	padding-top: 10px;
 	padding-bottom: 0;
 	text-align: center;
 	font-size: 15px;
+}
+
+.footerCopyright {
+	position: absolute;
+	float: right;
+}
+
+.footerContacts {
+	height: 50px;
+	float: left;
+}
+
+.footerLinkList {
+	list-style: none;
+	position: absolute;
+	float: right;
+}
+
+.footerLogoImg {
+	width: 30px;
+	height: 30px;
+}
+
+.footerLogoList {
+	display: inline;
 }
 
 
