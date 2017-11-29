@@ -7,13 +7,13 @@
 	</head>
 	
 	<body>
-		<header>
-			<h1 class="welcomeHeader">Welcome!</h1>
+		<header id="top">
+			<h1 class="welcomeHeader">Sergey Komarov</h1>
 			<img id="profileimg" src="img/profileImg.jpg" alt="profile">
 			<h2 class="descriptionHeader">Here you can know something about me.</h2>
 		</header>
 
-		<aside class="menuBar">
+		<aside class="navBar">
 			<nav>
 				<ul>
 					<li><a href="#aboutMe">About Me</a></li>
@@ -25,24 +25,43 @@
 		</aside>
 
 		<div class="group">
-			<aside class="leftPanel">
+			<aside id="myContacts" class="leftPanel">
 				<h3 class="contactsHeader">Contacts</h3>
 				<div class="contacts">
 					<ul class="linkList">
-						<li class="logoList"><a href="http://vk.com/id36851807" target="_blank"><img class="logoImg" 
-																		src="img/logo/logo-vk.png" alt="logo-vk"></a></li>
-						<li class="logoList"><a href="http://linkedin.com/in/sergkomarov" target="_blank"><img class="logoImg" 
-																	src="img/logo/logo-linkedin.png" alt="logo-linkedin"></a></li>
-						<li class="logoList"><a href="http://twitter.com/snufferok" target="_blank"><img class="logoImg" 
-																	src="img/logo/logo-twitter.png" alt="logo-twitter"></a></li>
-						<li class="logoList"><a href="http://instagram.com/yellowdress_lockedknees" target="_blank"><img class="logoImg" 
-																	src="img/logo/logo-instagram.png" alt="logo-instagram"></a></li>
-						<li class="logoList"><a href="http://github.com/ckomorov" target="_blank"><img class="logoImg" 
-																	src="img/logo/logo-git.png" alt="logo-git"></a></li>	
-						<li class="logoList"><a href="http://facebook.com/ckomorov" target="_blank"><img class="logoImg" 
-																		src="img/logo/logo-facebook.png" alt="logo-facebook"></a></li>														
+						<li class="logoList">
+							<a href="http://vk.com/id36851807" target="_blank">
+								<img class="logoImg" src="img/logo/logo-vk.png" alt="logo-vk">
+							</a>
+						</li>
+						<li class="logoList">
+							<a href="http://linkedin.com/in/sergkomarov" target="_blank">
+								<img class="logoImg"src="img/logo/logo-linkedin.png" alt="logo-linkedin">
+							</a>
+						</li>
+						<li class="logoList">
+							<a href="http://twitter.com/snufferok" target="_blank">
+								<img class="logoImg" src="img/logo/logo-twitter.png" alt="logo-twitter">
+							</a>
+						</li>
+						<li class="logoList">
+							<a href="http://instagram.com/yellowdress_lockedknees" target="_blank">
+								<img class="logoImg" src="img/logo/logo-instagram.png" alt="logo-instagram">
+							</a>
+						</li>
+						<li class="logoList">
+							<a href="http://github.com/ckomorov" target="_blank">
+								<img class="logoImg" src="img/logo/logo-git.png" alt="logo-git">
+							</a>
+						</li>	
+						<li class="logoList">
+							<a href="http://facebook.com/ckomorov" target="_blank">
+								<img class="logoImg" src="img/logo/logo-facebook.png" alt="logo-facebook">
+							</a>
+						</li>														
 					</ul>
 				</div>
+				
 				<div class="contactsDescription">
 					<ul class="descriptionList">
 						<li class="descriptionListItem">vkontakte</li>
@@ -56,31 +75,78 @@
 			</aside>
 		
 			<section class="content">
-				CONTENT
+				<div id="aboutMe" class="infoAboutMyself">
+					<h2> Welcome! </h2>
+					<p>Для справки, обтекаемые элементы располагаются по краю родительского элемента. 
+					Если нет родителя, обтекаемый элемент будет располагаться по краю страницы.
+					Когда мы устанавливаем элемент обтекаемым, то убираем его из обычного потока HTML-документа. 
+					Это приводит к тому, что ширина этого элемента по умолчанию становится шириной его содержимого.</p> 
+					<p>Иногда, например, когда мы создаём колонки для многократно используемого макета, 
+					такое поведение нежелательно. Это можно исправить путём добавления свойства width с фиксированным 
+					значением для каждой колонки. Кроме того, чтобы обтекаемые элементы не соприкасались друг с другом, 
+					в результате чего содержимое одного элемента располагается рядом с другим, мы можем использовать свойство 
+					margin, чтобы установить пространство между элементами.</p>
+					<p>Для справки, обтекаемые элементы располагаются по краю родительского элемента. 
+					Если нет родителя, обтекаемый элемент будет располагаться по краю страницы.
+					Когда мы устанавливаем элемент обтекаемым, то убираем его из обычного потока HTML-документа. 
+					Это приводит к тому, что ширина этого элемента по умолчанию становится шириной его содержимого.</p>
+				</div>
+				
+				<figure class="myPhoto">
+					<figcaption class="myPhotoFigcaption">Here is some info about my life</figcaption>
+					<p><img src="img/myPhoto.jpg" width="300px" alt=""></p>				
+				</figure>
+			</section>
+			
+			<section id="mySkills" class="secondSection">
+				
+			</section>
+			
+			<section id="myWorks" class="thirdSection">
+			
 			</section>
 		</div>
-
+	
 		<footer>
 			<div class="footerContacts">
 				<ul class="footerLinkList">
-					<li class="footerLogoList"><a href="http://vk.com/id36851807" target="_blank"><img class="footerLogoImg" 
-																		src="img/logo/logo-vk.png" alt="logo-vk"></a></li>
-					<li class="footerLogoList"><a href="http://linkedin.com/in/sergkomarov" target="_blank"><img class="footerLogoImg" 
-																	src="img/logo/logo-linkedin.png" alt="logo-linkedin"></a></li>
-					<li class="footerLogoList"><a href="http://twitter.com/snufferok" target="_blank"><img class="footerLogoImg" 
-																	src="img/logo/logo-twitter.png" alt="logo-twitter"></a></li>
-					<li class="footerLogoList"><a href="http://instagram.com/yellowdress_lockedknees" target="_blank"><img class="footerLogoImg" 
-																	src="img/logo/logo-instagram.png" alt="logo-instagram"></a></li>
-					<li class="footerLogoList"><a href="http://github.com/ckomorov" target="_blank"><img class="footerLogoImg" 
-																	src="img/logo/logo-git.png" alt="logo-git"></a></li>	
-					<li class="footerLogoList"><a href="http://facebook.com/ckomorov" target="_blank"><img class="footerLogoImg" 
-																		src="img/logo/logo-facebook.png" alt="logo-facebook"></a></li>														
+					<li class="footerLogoList">
+						<a href="http://vk.com/id36851807" target="_blank">
+							<img class="footerLogoImg" src="img/logo/logo-vk.png" alt="logo-vk">
+						</a>
+					</li>
+					<li class="footerLogoList">
+						<a href="http://linkedin.com/in/sergkomarov" target="_blank">
+							<img class="footerLogoImg" src="img/logo/logo-linkedin.png" alt="logo-linkedin">
+						</a>
+					</li>
+					<li class="footerLogoList">
+						<a href="http://twitter.com/snufferok" target="_blank">
+							<img class="footerLogoImg" src="img/logo/logo-twitter.png" alt="logo-twitter">
+						</a>
+					</li>
+					<li class="footerLogoList">
+						<a href="http://instagram.com/yellowdress_lockedknees" target="_blank">
+							<img class="footerLogoImg" src="img/logo/logo-instagram.png" alt="logo-instagram">
+						</a>
+					</li>
+					<li class="footerLogoList">
+						<a href="http://github.com/ckomorov" target="_blank">
+							<img class="footerLogoImg" src="img/logo/logo-git.png" alt="logo-git">
+						</a>
+					</li>	
+					<li class="footerLogoList">
+						<a href="http://facebook.com/ckomorov" target="_blank">
+							<img class="footerLogoImg" src="img/logo/logo-facebook.png" alt="logo-facebook">
+						</a>
+					</li>														
 				</ul>
 			</div>
 			<div class="copyrightInfo">	
 				<p class="copyright"> © 2017 ZefirkaBel LCC - best zefirka in Europe</p>
 				<p class="copyright">created by Sergey Komarov</p>
 			</div>
+			<p class="backToTop"><a href="#top">Back to Top</a></p>
 		</footer>
 		
 	<body>
